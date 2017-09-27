@@ -1,0 +1,105 @@
+
+body {
+	padding: 0;
+	margin: 0;
+	font-weight: 18px;
+	line-height: 24px;
+	font-family: "Arial", san-serif;
+	color: #404040;
+	background-color: white;
+}
+
+
+
+.page-header,
+.page-footer {
+	padding: 10px;
+	background-color: #eeeeee;
+}
+.page-header{
+	background-color: #363636;
+	color: #c3c3c3;
+	background: url(img/header-background.jpg);
+}
+.main-nav{
+	list-style: none;
+}
+
+.main-nav a{
+	color: white;
+	text-decoration: none;
+}
+
+.main-nav a:hover{
+	text-decoration: underline;
+}
+
+.main-nav a:active{
+	color: rgba(255, 255, 255, 0.3);
+}
+.main-nav li {
+	text-transform: uppercase;
+}
+
+.btn{
+	color: #a38b70;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn:hover{
+	color: #8d745a;
+}
+
+.btn:active{
+	color: rgba(141, 116, 90, 0.3);
+}
+
+.promo{
+	text-align: center;
+	font-weight: bold;
+    line-height: 90%;
+	font-size: 75px;
+	color: white;
+}
+
+.advantages ul{
+     list-style: none;   
+}
+
+.advantage-item{
+ 	text-align: center;
+	border-left: solid 1px black;
+}
+
+.advantage-item:first-child{
+	border: none;
+}
+
+.advantage-title{
+	font-family: "Georgia", serif;
+	font-weight: 30px;
+	line-height: 30px;
+	color: #7B2D0F;
+}
+
+.section-title{
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.price-list td{
+	border: 1px solid #333333;
+
+}
+
+.price-list{
+	width: 50%;
+    border-collapse: collapse;
+}
+
+.page-footer {
+	margin-top: 20px;
+}
+
+
+
