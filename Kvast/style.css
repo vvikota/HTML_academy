@@ -97,6 +97,33 @@ body {
     border-collapse: collapse;
 }
 
+.reference-title{
+	font-size: 24px;
+}
+.reference-source{
+    font-size: 16px;
+    font-style: italic;
+}
+
+.history dd{
+	font-size: 16px;
+}
+
+.history dd img{
+	border-radius: 5px;
+}
+
+.reference-source a{
+	color: #82831A;
+}
+
+.reference-source a:hover{
+	color: #641212;
+}
+
+.reference-source a:active{
+	color: #646112;
+}
 .page-footer {
 	margin-top: 20px;
 }
