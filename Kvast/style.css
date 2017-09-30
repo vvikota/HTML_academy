@@ -1,5 +1,6 @@
 
 body {
+	min-width: 1200;
 	padding: 0;
 	margin: 0;
 	font-weight: 18px;
@@ -9,25 +10,54 @@ body {
 	background-color: white;
 }
 
-
-
-.page-header,
-.page-footer {
-	padding: 10px;
-	background-color: #eeeeee;
+.container {
+	width: 1020px;
+	margin: 0 auto;
+	border: solid 1px #0036FF;
 }
-.page-header{
-	background-color: #363636;
-	color: #c3c3c3;
-	background: url(img/header-background.jpg);
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.header-bottom{
+	margin-bottom: 125px;
+}
+.header-logo{
+	float: left;
+	width: 140px;
+	height: 76px;
+	border: solid 1px yellow;
 }
 .main-nav{
-	list-style: none;
+	float: left;
+	width: 520px;
+	border: solid 1px yellow;
+	padding: 0;
+	margin: 0;
+	margin-left: 125px;
 }
-
+.page-header {
+	padding: 0;
+	padding-top: 35px;
+	min-height: 490px;
+	background-color: #363636;
+	background-image: url("img/header-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+	
+.main-nav{
+	list-style: none;
+	border-top: solid 1px #938787;
+	border-bottom: solid 1px #938787;
+}
 .main-nav a{
 	color: white;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .main-nav a:hover{
@@ -62,39 +92,114 @@ body {
 	font-size: 75px;
 	color: white;
 }
-
+.advantages {
+	margin-top: 50px;
+	margin-bottom: 55px;
+}
 .advantages ul{
-     list-style: none;   
+     list-style: none;
+     padding: 0;
+     margin: 0;   
 }
 
 .advantage-item{
- 	text-align: center;
-	border-left: solid 1px black;
+ 	padding-left: 95px;
+ 	padding-right: 95px;
+ 	float: left;
+ 	width: 140px;
+ 	text-align: left;
+	border-left: solid 1px #e7b66a;
+
 }
 
 .advantage-item:first-child{
-	border: none;
-}
+	border-left-color: transparent;}
 
 .advantage-title{
 	font-family: "Georgia", serif;
 	font-weight: 30px;
 	line-height: 30px;
-	color: #7B2D0F;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
 }
 
+.advantage-item p{
+	font-weight: bolder;
+}
+.feature-production{
+	background: url("img/advantages1.jpg") 33% 0% no-repeat;
+
+}
+.feature-native {
+	background: url("img/advantages2.jpg") 33% 0% no-repeat;
+}
+.feature-quality {
+	background: url("img/advantages3.jpg") 33% 0% no-repeat;
+}
+
+
+
+.advantage-item{
+  padding-top: 90px;
+}
+
+.history{
+	padding-top: 70px;
+	padding-bottom: 90px;
+}
+
+.history dl{
+	width: 820px;
+}
+
+.history dt{
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.history dd + dt{
+	margin-top: 70px;
+}
+
+.history dd{
+	margin: 0;
+}
 .section-title{
 	text-transform: uppercase;
 	font-size: 40px;
 }
-.price-list td{
-	border: 1px solid #333333;
+.review-author{
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
 
 }
+.price-list tr{
+	border-bottom: 1px solid lightgrey;
+}
+.price-list th{
+    color: lightgrey;
+    text-transform: uppercase;
+    font-size: 9px;
 
+}
 .price-list{
 	width: 50%;
     border-collapse: collapse;
+
+}
+.price-list td:first-child{
+	font-weight: bold;
+}
+
+td sup {
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	font-size: 7px;
+	padding: 2px;
 }
 
 .reference-title{
@@ -124,9 +229,82 @@ body {
 .reference-source a:active{
 	color: #646112;
 }
-.page-footer {
-	margin-top: 20px;
+
+.order,
+.advantages{
+	background-color: #ffcb78;
+}
+
+ form label {
+ 	text-transform: uppercase;
+ 	font-weight: bold;
+ 	font-size: 12px;
+ }
+
+ 
+
+.order-form input[type="text"],
+.order-form select,
+.order-form textarea {
+	font: inherit;
+	color: inherit;
+	background-color: #e6b66c;
+ 	border: 0;
+ 	padding: 0;
+}
+
+.order-form input[type="text"]:hover,
+.order-form select:hover,
+.order-form textarea:hover {
+	background-color: #99D5F7;
+}
+
+.order-form input[type="text"]:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+	background-color: #F75454;
 }
 
 
 
+.page-footer {
+	margin-top: 20px;
+	padding: 0;
+	background-color: black;
+}
+
+.footer-menu a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.footer-menu a:hover{
+	color: #99D5F7;
+}
+
+.footer-menu a:active{
+	color: #F75454;
+}
+.footer-nav{
+	list-style: none;
+}
+
+.social-btn{
+	color: white;
+}
+.footer-copyright,
+.footer-copyright a {
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+.footer-copyright a:hover{
+	text-decoration: underline;
+}
+
+.footer-copyright a:active{
+	color: #F75454;
+}
