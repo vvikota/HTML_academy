@@ -458,21 +458,51 @@ td sup {
   padding-bottom: 115px;
 }
 
+.order h2{
+	margin-top: 0;
+	margin-bottom: 95px;
+}
+
+.order p{
+	margin-bottom: 80px;
+}
 form label {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
+  float: left;
+  
+
+}
+
+
+
+.order_form_group{	
+	text-align: right;
+	line-height: 45px;
+	margin-bottom: 10px;
+}
+.email{
+	margin-bottom: 60px;
 }
 
 .order-form input[type="text"],
 .order-form select,
 .order-form textarea {
   font: inherit;
-  color: inherit;
+  color: #a67d47;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 19px;
   background-color: #e6b66c;
   border: 0;
-  padding: 0;
+  width: 600px; 
+  height: 50px;
+  
 }
+
 
 .order-form input[type="text"]:hover,
 .order-form select:hover,
@@ -484,6 +514,38 @@ form label {
 .order-form select:focus,
 .order-form textarea:focus {
   background-color: #F75454;
+}
+
+#phone,
+#second_number{
+	width: 200px;
+}
+.phone-left{
+	float: left;
+}
+.phone-left label{
+	padding-right: 60px;	
+}
+.phone-right label{
+	padding-right: 37px;
+}
+.phone-right{
+	float: right;
+}
+
+
+textarea#message{
+	
+	min-height: 150px;
+}
+
+.checkbox-area{
+   margin-left: 220px;
+   margin-top: 15px;
+}
+.btn-order{
+	margin-left: 220px;
+	margin-top: 45px;
 }
 
 .page-footer {

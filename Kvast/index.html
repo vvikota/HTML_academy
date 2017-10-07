@@ -47,7 +47,7 @@
           </div>
           <img src="img/bottle-left.jpg" width="319" height="459">
           <h3 class="section-title">Вахтер</h3>
-          <p class="product-info">Лёгкий и освежающий напиток поможет сохранять отличное настроение в течение всего дня.</p>
+          <p class="product-info">Лёгкий и освежающий напиток поможет сохранять  отличное настроение в течение всего дня.</p>
           <a href="#" class="btn btn-info">Подробнее</a>
           <a href="#" class="btn btn-buy">Купить</a>
           <b>150 Р.</b>
@@ -179,28 +179,30 @@
       <h2>Заказать</h2>
       <p>
         Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите
-        <br> настоящий крафтовый квас сейчас. При заказе от 10 баррелей скидка 10%
+        <br> настоящий крафтовый квас сейчас. При заказе от 10 баррелей - скидка 10%
       </p>
       <form action="#" class="order-form">
         <div class="order_form_group">
           <label for="fullname">Представтесь:</label>
           <input type="text" name="fullname" id="fullname" value="как мы можем к вам обращаться?" size="30">
         </div>
-        <div class="order_form_group">
-          <label for="phone">Номер телефона:</label>
-          <input type="text" name="phone" id="phone">
+        <div class="clearfix">
+          <div class="order_form_group phone-left">
+          <label for="phone" >Номер телефона:</label>
+          <input type="text" name="phone" id="phone" value="+7 (XXX) XXX-XX-XX">
         </div>
-        <div class="order_form_group">
+        <div class="order_form_group phone-right">
           <label for="second_number">Доп. номер:</label>
-          <input type="text" name="second_number" id="second_number">
+          <input type="text" name="second_number" id="second_number" value="+7 (XXX) XXX-XX-XX">
         </div>
-        <div class="order_form_group">
+        </div>
+        <div class="order_form_group email">
           <label for="post">Email:</label>
-          <input type="text" name="post" id="post">
+          <input type="text" name="post" id="post" value="Ваша электронная почта">
         </div>
         <div class="order_form_group">
           <label for="order_quantity">
-            Обьем заказа
+            Обьем заказа:
           </label>
           <select name="order_quantity" id="order_quantity">
             <option value="1">От 5 до 10 баррелей в неделю</option>
@@ -210,9 +212,9 @@
         </div>
         <div class="order_form_group">
           <label for="message">Доп. комментарий:</label>
-          <textarea name="message" id="message" cols="85" rows="10"></textarea>
+          <textarea name="message" id="message" cols="85" rows="10">Сообщите нам все, что считаете нужным</textarea>
         </div>
-        <div class="checkbox_area">
+        <div class="checkbox-area">
           <label for="subscrioption">
             <input type="checkbox" name="subscrioption" checked> Я согласен получать квасную рассылку
           </label>
