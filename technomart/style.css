@@ -1,0 +1,148 @@
+body{
+	width: 1200px;
+}
+
+.header{
+	background-color: #f1f5f7;
+	padding-bottom: 60px;
+}
+
+.logo{
+	font-size: 24px;
+	background-color: #ee3643;
+}
+
+.header-top{
+	
+	padding: 0 130px;
+	align-items: center;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	background-color: #293449;
+	height:40px;
+   }
+
+.order{
+	background-color: #63a63e;
+	color: white;
+} 
+
+.header-middle{
+	display: flex;
+	align-items: center;
+	width: 940px;
+	margin:  45px auto ;
+}  
+
+
+.main-nav{
+	display: flex;
+	width: 940px;
+	height: 60px;
+	margin: 0 auto;
+	background-color: #293449;	
+}
+.main-nav ul{
+	display: flex;
+	justify-content: space-between;
+	width: inherit;
+	padding: 0 50px;
+}
+
+.main-nav ul li{
+	list-style: none;
+	margin: auto 0px;
+	color: white;
+}
+
+.catalog{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+.catalog-card{
+	width: 300px;
+	height: 120px;	
+}
+
+.slider{
+	width: 620px;
+	height: 265px;
+}
+
+ .materials,
+ .discounts    {
+   margin-bottom: 25px;	
+}
+
+.materials{
+	background-color: #f6b22d;
+}
+
+.catalog div:nth-child(2){
+	background-color: #4aafde;
+}
+.catalog div:nth-child(3){
+	background-color: #cc79d1;
+}
+.discounts{	
+	background-color: #85d179;
+}
+.delivery{
+	background-color: #f6b22d ;
+}
+
+
+.slider{
+	background-color: red;
+}
+
+.popular-items-top,
+.popular-mnf-top{
+	display: flex;
+	margin: 20px auto;
+	justify-content: space-between;
+	align-items: center;
+	width: 940px;
+	height: 90px;
+	background-color: #f7f3ec;
+}
+
+.popular-items-top h2,
+.popular-mnf-top h2{
+	margin-left: 30px;}
+
+.popular-items-top a,
+.popular-mnf-top a{
+	margin-right: 25px;}
+
+.popular-items-content,
+.popular-mnf-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 940px;
+	margin: 20px auto;
+}
+
+.product-card{
+	width: 220px;
+	height: 320px;
+	border: 1px solid #e5e5e5;
+	
+}	
+
+.mnf-card {    
+	
+	display: inherit;
+	width: 220px;
+	height: 145px;
+    border: 1px solid #e5e5e5;
+    margin-top: 20px;}
+.mnf-card img{
+	margin: auto;
+}    
