@@ -13,7 +13,6 @@ li {
   list-style: none;
 }
 
-
 .header {
   background-color: #f1f5f7;
   padding-bottom: 60px;
@@ -22,11 +21,16 @@ li {
 .logo p{
   font-size: 24px;
   line-height: 24px;
+    margin: 0;
   padding: 15px 55px 7px 55px;
   text-transform: uppercase;
   background-color: #ee3643;
   color: white;
   border-bottom: 4px solid #b52933;
+}
+
+.logo p:hover{
+    background-color: #ca2c37;
 }
 
 .back-header {
@@ -40,60 +44,77 @@ li {
   color: white;
   display: flex;
   justify-content: space-between;
-  height: 42px;
+    height: 42px;
 }
 
 .header-top a {
    text-decoration: none;
   color: white;
 }
+
 .search,
-.bookmark,
+.bookmarks,
 .basket{
   position: relative;
 }
 
 .search{
-  margin-right: 220px;
-  margin-left: 20px;
+    margin-right: 140px;
+    margin-left: 0px;
 }
 
-.bookmark{
-  margin-right: 70px;
-}
+.search p,
+.bookmarks p,
+.basket p{
+    margin: 0;
+    padding: 9px 30px 9px 30px}
 
-.search p::before,
-.bookmark p::before,
-.basket p::before{
+.search:before,
+.bookmarks:before,
+.basket:before{
   content: "";
   position: absolute;
   width: 23px;
-  height: 23px;
-  top: 11px;
-  background-image: url(pictures/spritesheet.png);
+    height: 23px;
+    top: 4px;
+    left: -3px;
+  background-image: url(pictures/spritesheet3.png);
   background-repeat: no-repeat;
-}
-.search p::before{
-  right: 45px;
-  background-position: -59px -1px;
+    opacity: 0.3;
 }
 
-.bookmark p::before{
-  right: 82px;
-  background-position: -26px 1px;
+.search:before{
+    background-position: -83px -1px;
 }
 
-.basket p::before{
-  right: 72px;
-  background-position: -1px 1px;
+.bookmarks:before{
+    background-position: -26px 1px;
 }
 
+.basket:before{
+    background-position: -1px 1px;
+}
+
+.search:hover,
+.bookmarks:hover,
+.basket:hover{
+    background-color: #212a3a;}
+
+.search:hover:before,
+.bookmarks:hover:before,
+.basket:hover:before{
+    opacity: 1;
+}
 .order {
   background-color: #63a63e;
   color: white;
   padding: 12px 20px;
   font-size: 17px;
   line-height: 18px;
+}
+
+.order:hover{
+    background-color: #5fbb2d;
 }
 
 .header-middle {
@@ -121,6 +142,7 @@ li {
 .section-two{
 	width: 271px;
 }
+
 .section-two span{
     position: relative;
   display: block;
@@ -151,6 +173,7 @@ li {
 }
 
 .section-three{
+    position: relative;
     display: flex;
 	width: 285px;
 	margin-left: auto;
@@ -164,13 +187,16 @@ li {
   color: black;
 }
 
+.section-three a:hover{
+    color: #ee3643;
+}
+
 .section-three a:nth-child(1){
-    position: relative;
     margin-right: 10px;
     padding: 15px 25px 15px 50px;
 }
 
-.section-three a:nth-child(1)::before{
+.section-three span{
     content:"  ";
     position: absolute;
     width: 30px;
@@ -180,10 +206,12 @@ li {
     background-image: url(pictures/spritesheet.png);
     background-position: -2px 31px;
 }
+
 .section-three a:nth-child(2){
     width: 150px;
     padding: 15px 25px;
 }
+
 .main-nav {
   display: flex;
   width: 940px;
@@ -222,7 +250,6 @@ li {
     color: rgba(255, 255, 255, 0.5);
 }
 
-
 .main-nav li:hover{
     background-color: #293449;
 }
@@ -244,9 +271,11 @@ li {
     left: 25px;
     width: 195px;
 }
+
 .btn-catalog p {
     margin: 0;
 }
+
 .catalog-card {
   position: relative;
   width: 300px;
@@ -275,7 +304,7 @@ li {
      background-repeat: no-repeat;
   }
 
-.catalog a{
+.catalog-card a{
   display: block;
   width: 135px;
   height: 40px;
@@ -288,18 +317,17 @@ li {
   font-size: 14px;
   color: white;
   text-decoration: none;
-  border-radius: 3px;}
-
-.catalog-card a{
-    background-color: rgba(0, 0, 0, 0.1);
-}
+  border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);}
 
 .catalog-card a:hover{
     background: rgba(0, 0, 0, 0.2);
 }
+
 .catalog-card a:active{
     background: rgba(0, 0, 0, 0.3);
 }
+
 .slider {
     position: relative;
     width: 620px;
@@ -320,6 +348,7 @@ li {
      right: 10px;
      background-position: 33px 4px;
  }
+
 .slider .arrow-left{
     top: 100px;
     left: 10px;
@@ -330,18 +359,18 @@ li {
   margin-bottom: 20px;
 }
 
-
 .materials {
   background-color: #f6b22d;
 }
 
 .materials:before{
-  background-position: -53px -75px;
+  background-position: -55px -76px;
 }
 
 .instruments {
   background-color: #4aafde;
 }
+
 .instruments:before {
   background-position: -155px -72px;}
 
@@ -356,6 +385,7 @@ li {
 .discounts {
   background-color: #85d179;
 }
+
 .discounts:before {
   height: 75px;
   right: 37px;
@@ -369,8 +399,6 @@ li {
   background-position: -72px -1px;
 }
 
-
-
 .btn-main{
     font-size: 14px;
     line-height: 18px;
@@ -383,6 +411,14 @@ li {
     color: white;
 	background-color: #ee3643;
 	border-radius: 3px;
+}
+
+.btn-main:hover{
+    background-color: #ca2c37;
+}
+
+.btn-main:active{
+    background-color: #ba2732;
 }
 
 .popular-items .btn-main,
@@ -437,9 +473,148 @@ li {
 }
 
 .product-card {
-  width: 220px;
-  height: 320px;
-  border: 1px solid #e5e5e5;
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+}
+
+.product-card .flag{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 59px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+    background: url("pictures/newflag.png");
+}
+
+.product-card .actions{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10;
+}
+.product-card .actions .buy,
+.product-card .actions .bookmark{
+    position: relative;
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+    background-color: #63a63e;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Cuprum', sans-serif;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.product-card .actions .bookmark{
+    color: #32425c;
+    background: white;
+    border-bottom-color: #63a63e;
+}
+
+.actions .buy:after{
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 2px;
+    left: 4px;
+    background-image: url("pictures/spritesheet3.png");
+    opacity: 0.3;
+}
+
+.actions .buy:hover:after{
+    opacity: 1;
+}
+
+.actions .buy:hover{
+    background-color: #5fbb2d;
+    border-color: #5fbb2d;
+    border-bottom-color: #367315;
+}
+.actions .buy:active{
+    background-color: #518534;
+    border-color: #518534;
+}
+.actions .bookmark:hover{
+    border-color: #32425c;
+    color: #32425c;
+}
+.actions .bookmark:active{
+    border-color: rgba(50, 66, 92, 0.3);
+    color: rgba(50, 66, 92, 0.3);
+}
+.product-card .actions{
+    display: none;
+}
+
+.product-card:hover .actions{
+    display: block;
+}
+.product-card .image{
+    width: 217px;
+    height: 167px;
+}
+
+.product-card .image img{
+    max-width: 100%;
+}
+
+.product-card .title{
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card .discount{
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.product-card .price{
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    color: white;
+    background-color: #ee3643;
+    border-radius: 3px;
+}
+
+.product-card .price:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 20px solid white;
+    border-left-color: #ee3643;
 }
 
 .mnf-card {
@@ -448,6 +623,17 @@ li {
   height: 145px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
+}
+
+.mnf-card:hover{
+    box-shadow:  0 10px 25px rgba(41, 52, 73, 0.5);
+    border-color: white;
+}
+
+.mnf-card:active{
+    box-shadow:  0 4px 10px rgba(41, 52, 73, 0.5);
+    border-color: white;
+    opacity: 0.3;
 }
 
 .mnf-card img {
@@ -494,10 +680,12 @@ li {
 	color: white;
 	background-color: #32425c;
 }
+
 .service-content img{
 	width: 206px;
 	height: 146px;
 }
+
 .service-delivery{
 	width:280px;
 	border: 1px solid green;
@@ -526,6 +714,7 @@ li {
 .about ul li{
 	line-height: 30px;
 }
+
 .contact{
 	width: 300px;
 }
@@ -534,6 +723,7 @@ li {
 	margin-top: 20px;
 	margin-bottom: 40px;
 }
+
 .footer {
   background-color: #32425c;
   color: white;
@@ -572,9 +762,11 @@ li {
 	margin-left: 60px;
 	line-height: 24px
 }
+
 .footer-nav-two ul li{
   color:#ffd180;
 }
+
 .footer-middle{
 	padding-bottom: 50px;
 }
