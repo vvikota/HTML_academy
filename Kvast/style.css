@@ -474,7 +474,7 @@ form label {
   float: left;
 }
 
-.order_form_group{	
+.order_form_group{
 	text-align: right;
 	line-height: 45px;
 	margin-bottom: 10px;
@@ -492,10 +492,10 @@ form label {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: bold;
-  padding: 19px;
+  padding: 15px;
   background-color: #e6b66c;
   border: 0;
-  width: 600px; 
+  width: 600px;
   height: 50px;
   
 }
@@ -504,13 +504,14 @@ form label {
 .order-form input[type="text"]:hover,
 .order-form select:hover,
 .order-form textarea:hover {
+  cursor: pointer;
   background-color: #F3CB74;
 }
 
 .order-form input[type="text"]:focus,
 .order-form select:focus,
 .order-form textarea:focus {
-  background-color: #A5FBEA;
+  background-color: white;
 }
 
 #phone,
@@ -521,7 +522,7 @@ form label {
 	float: left;
 }
 .phone-left label{
-	padding-right: 60px;	
+	padding-right: 60px;
 }
 .phone-right label{
 	padding-right: 37px;
@@ -532,7 +533,7 @@ form label {
 
 
 textarea#message{
-	
+
 	min-height: 150px;
 }
 
@@ -585,7 +586,7 @@ textarea#message{
   list-style: none;
   margin: 0;
   padding: 0;
-  
+
   margin-left: 125px;
   margin-top: 35px;
 }
@@ -642,7 +643,7 @@ textarea#message{
 .footer-copyright {
   float: right;
   width: 290px;
-  
+
 }
 .footer-copyright .emblem{
 	display: inline-block;
@@ -652,7 +653,7 @@ textarea#message{
 	background-position: -4px -5px;
 	width: 67px;
 	height: 67px;
-	
+
 
 }
 
